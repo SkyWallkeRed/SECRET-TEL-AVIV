@@ -1,22 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+
 body {
     margin: 0;
     background-color: #ddd;
-    scroll-behavior: smooth;
 }
 
 nav li {
     display: inline-block;
-    margin: 0;
-    margin-top: auto;
 }
 
 nav {
     background-color: #333333;
     position: fixed;
     width: 100%;
-    height: 80px;
     top: 0;
-    text-align: center;
 }
 
 nav li a {
@@ -28,25 +29,26 @@ nav li a {
     font-weight: bold;
     padding: 0 18px;
     font-family: 'Roboto', sans-serif;
-    font-size: large;
+}
+
+nav ul {
+    margin: 0;
+    text-align: center;
 }
 
 .hero-image {
     width: 100%;
-    height: 150px;
     max-width: 500px;
     display: block;
-    /* margin: 0 auto; */
-    /* margin-top: 80px; */
-    margin: auto;
-    padding-top: 340px;
-    /* margin-top: 400px; */
+    margin: 0 auto;
+    padding-top: 250px;
 }
 
 .hero {
-    background-image: url(http://www.elevationacademy.co/wp-content/uploads/2016/02/Tel-Aviv.jpg);
+    background: url('http://www.elevationacademy.co/wp-content/uploads/2016/02/Tel-Aviv.jpg') no-repeat center fixed;
     background-size: cover;
-    height: 1000px;
+    height: 700px;
+    width: 100%;
 }
 
 h1 {
@@ -69,18 +71,9 @@ section {
     background-color: #ddd;
 }
 
-.food {
-    /* display: inline-block;  */
-    /* float: left; */
-}
-
 .column {
     float: left;
     width: 33.333%;
-}
-
-.food img {
-    width: 100%;
 }
 
 .food img {
@@ -90,4 +83,58 @@ section {
 
 .column-inner {
     padding: 20px;
+}
+
+.column-70 {
+    background-image: url(https://st.depositphotos.com/1873343/1751/i/950/depositphotos_17519177-stock-photo-tel-aviv-skyline-night-city.jpg);
+    width: 60%;
+    float: left;
+    height: 650px;
+    margin-left: 5%;
+    /* background-color:red; */
+}
+
+.nightLifeH1 {
+    background-color: white;
+}
+
+.column-30 {
+    padding: 10px;
+    width: 25%;
+    float: left;
+    /* height: 650px; */
+    margin-left: 5%;
+    background-color: white;
+    font-size: xx-large;
+    /* padding: 10px; */
+}
+
+.imgbar {
+    height: 500px;
+    float: left;
+    width: 100%;
+    padding: 45px;
+}
+
+.row::before {
+    display: table;
+    content: "";
+}
+
+.row::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+@media(max-width: 700px) {
+    .column {
+        width: 100%;
+    }
+    .column-70 {
+        width: 100%;
+    }
+    .column-30 {
+        width: 100%;
+    }
 }
